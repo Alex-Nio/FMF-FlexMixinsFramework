@@ -6,6 +6,7 @@
 Основные моменты и обозначения:
 
 Свойства:
+
 df = (Свойство> display: flex)
 j = (Свойство> justify content)
 _ai = (Свойство> align-items)
