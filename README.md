@@ -1,7 +1,7 @@
 # FMF-FlexMixinsFramework v.1.1 by Nio 07.02.2021
 ### Мой Flex-фреймворк для работы с препроцессорами SASS/SCSS
 
-Основан на добавлении миксинов полноценных флекс-конструкций через import внутри SASS/SCSS препроцессоров.
+Основан на добавлении миксинов полноценных флекс-конструкций через include внутри SASS/SCSS препроцессоров.
 ***
 ### Основные моменты и обозначения:
 
@@ -41,12 +41,12 @@
 ---
 #### Примеры использования:
 
-    @import _aic (align-items-center)
+    @include _aic (align-items: center)
 
-    @import fdjc (display: flex, justify content: center)
+    @include fdjc (display: flex, justify content: center)
 
-    @import fdr (display: flex, flex-direction: row)
+    @include fdr (display: flex, flex-direction: row)
 
-    @import fdrjc_aic (display: flex, flex-direction: row, justify content: center, align-items: center)
+    @include fdrjc_aic (display: flex, flex-direction: row, justify content: center, align-items: center)
 
-    @import fdcjc_aic (display: flex, flex-direction: column, justify content: center, align-items: center)
+    @include fdcjc_aic (display: flex, flex-direction: column, justify content: center, align-items: center)
