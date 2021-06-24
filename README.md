@@ -7,7 +7,11 @@
 
 **Свойства:**
 
-    df = (Свойство> display: flex)
+    fd = (Свойство> display: flex)
+
+    r = (Обозначение flex-direction: row)
+    
+    c = (Обозначение flex-direction: column)
 
     j = (Свойство> justify content)
 
@@ -39,4 +43,10 @@
 
     @import _aic (align-items-center)
 
-    @import dfjc (display: flex, justify content: center)
+    @import fdjc (display: flex, justify content: center)
+
+    @import fdr (display: flex, flex-direction: row)
+
+    @import fdrjc_aic (display: flex, flex-direction: row, justify content: center, align-items: center)
+
+    @import fdcjc_aic (display: flex, flex-direction: column, justify content: center, align-items: center)
