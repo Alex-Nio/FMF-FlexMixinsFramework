@@ -1,58 +1,93 @@
-@import _reset
-
-@import _fonts
-
-@import _const
-
-@import _mobile
+@import "vendor/_reset"
+@import "vendor/_flexframework"
+@import "vendor/_mixins"
+@import "base/_fonts"
+@import "helpers/_variables"
 
 // ----------------Header----------------
-// -------То,что ниже-удалить------------
 
-@mixin ff_title
-  font-family: $ff_NB
-  font-size: 26px
-  font-weight: bold
-  color: $orange
+h1
+	text-align: center
+	@include ff_main_title
+	margin-bottom: 15px
 
-@mixin ff_subt
-  font-family: $ff_NL
-  font-size: 18px
-  font-weight: bold
-  color: $black
+.main span
+	@include ff_main_subtitle
+	text-align: center
+	margin-bottom: 15px
 
 .main
-  width: 100vw
-  height: 100vh
-  background-color: #fefefe
-  display: flex
-  justify-content: center
-  align-items: center
+	@include fdcjc_aic
+	width: 100vw
+	height: 100vh
+	background-color: #fefefe
 
 .table
-  width: 80vw
-  height: 80vh
-  border: 3px solid $orange
-
-.table-content
-  display: flex
-  justify-content: center
-  flex-direction: column
-  align-items: center
-  border: 2px solid $black
-  background-color: rgba(180, 255, 183, 0.48)
+	width: 80vw
+	border: 3px solid $orange
 
 .row
-  width: 150px
   background-color: rgba(173, 140, 215, 0.48)
 
-.table-title
-  display: inline-flex
-  @include ff_title
-  padding: 2px
-  margin: 5px
-
 .table-content
-  & span
-    @include ff_subt
-    display: block
+	@include fdcjc_aic
+	width: 100%
+	align-items: center
+	border: 2px solid $black
+	background-color: rgba(180, 255, 183, 0.48)
+	& h2
+		@include ff_subt
+		color: #8B00FF
+		padding: 5px 0
+	& h3
+		width: 100%
+		@include ff_title
+		text-align: center
+		border-top: 2px solid $black
+		border-bottom: 2px solid $black
+		padding: 5px 0
+	& span
+		@include ff_subt
+		display: block
+	& .table-content__item
+		text-align: center
+
+.table-devider
+	width: 100%
+	height: 60px
+	@include fdrjc_aic
+	text-align: center
+	background-color: #a8dadc
+	@include ff_table_devider
+
+.table-content__list
+	display: grid
+	width: 100%
+	grid-template-columns: repeat(3, 1fr)
+	background-color: black
+	grid-gap: 1px
+
+.table-content__item
+	padding: 40px
+	background-color: #f1faee
+
+.table-content__top
+	width: 100%
+	@include fdrjc_aic
+
+.item-title h2
+	color: red
+	padding: 2px
+	margin: 5px
+
+.item-description
+	@include ff_cursive
+	padding: 5px
+
+.text-devider
+	@include ff_devider
+	padding: 2px
+	margin: 5px
+
+// Media Quaries import
+	@import _mediaQ

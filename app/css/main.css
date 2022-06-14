@@ -95,68 +95,155 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+h1 {
+  text-align: center;
+  font-family: "NB", sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px; }
+
+.main span {
+  font-family: "NL", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px; }
+
 .main {
-  width: 100vw;
-  height: 100vh;
-  background-color: #fefefe;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fefefe; }
 
 .table {
   width: 80vw;
-  height: 80vh;
   border: 3px solid #ef7f1a; }
+
+.row {
+  background-color: rgba(173, 140, 215, 0.48); }
 
 .table-content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  align-items: center;
   border: 2px solid #000000;
   background-color: rgba(180, 255, 183, 0.48); }
+  .table-content h2 {
+    font-family: "NL", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    color: #8B00FF;
+    padding: 5px 0; }
+  .table-content h3 {
+    width: 100%;
+    font-family: "NB", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ef7f1a;
+    text-align: center;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 5px 0; }
+  .table-content span {
+    font-family: "NL", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    display: block; }
+  .table-content .table-content__item {
+    text-align: center; }
 
-.row {
-  width: 150px;
-  background-color: rgba(173, 140, 215, 0.48); }
-
-.table-title {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-family: "NB", sans-serif;
+.table-devider {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #a8dadc;
+  font-family: "NL", sans-serif;
   font-size: 26px;
   font-weight: bold;
-  color: #ef7f1a;
+  color: red; }
+
+.table-content__list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  grid-gap: 1px; }
+
+.table-content__item {
+  padding: 40px;
+  background-color: #f1faee; }
+
+.table-content__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.item-title h2 {
+  color: red;
   padding: 2px;
   margin: 5px; }
 
-.table-content span {
+.item-description {
   font-family: "NL", sans-serif;
-  font-size: 18px;
+  font-style: italic;
+  font-size: 14px;
+  padding: 5px; }
+
+.text-devider {
+  font-family: "NL", sans-serif;
+  font-size: 14px;
   font-weight: bold;
   color: #000000;
-  display: block; }
+  padding: 2px;
+  margin: 5px; }
