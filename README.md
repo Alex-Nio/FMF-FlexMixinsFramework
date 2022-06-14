@@ -50,3 +50,6 @@
     @include fdrjc_aic (display: flex, flex-direction: row, justify content: center, align-items: center)
 
     @include fdcjc_aic (display: flex, flex-direction: column, justify content: center, align-items: center)
+
+
+![FMFTemplate](https://user-images.githubusercontent.com/80686716/173562107-d2efd330-1a79-42c1-86ac-6baa1ed12ca8.jpg)
